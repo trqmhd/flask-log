@@ -23,7 +23,6 @@ def record_factory(*args, **kwargs):
     else:
         record.request_method = "SYS"
         record.ip = "localhost"
-    print (record)
     return record
 
 old_factory = logging.getLogRecordFactory()

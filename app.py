@@ -28,8 +28,8 @@ def record_factory(*args, **kwargs):
 old_factory = logging.getLogRecordFactory()
 logging.setLogRecordFactory(record_factory)
 
-# log = logging.getLogger('werkzeug')
-# log.setLevel(logging.ERROR)
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 
 @app.route('/', methods=['GET'])
 def home():
